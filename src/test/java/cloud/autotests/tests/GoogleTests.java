@@ -4,7 +4,9 @@ import cloud.autotests.helpers.DriverUtils;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.WebDriverConditions;
+import io.qameta.allure.AllureId;
 import io.qameta.allure.Description;
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -12,14 +14,14 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 import static org.assertj.core.api.Assertions.assertThat;
 
-
+@Feature("General tests")
 public class GoogleTests extends TestBase {
     @Test
+    @AllureId("6018")
     @Description("Open github.com and verify the title")
     @DisplayName("Main page title should be correct")
     void titleMainPageCheckTest() {
@@ -36,6 +38,7 @@ public class GoogleTests extends TestBase {
     }
 
     @Test
+    @AllureId("6017")
     @Description("Checking the console logs for severe errors")
     @DisplayName("Page console log should not have errors")
     void consoleShouldNotHaveErrorsTest() {
@@ -52,6 +55,7 @@ public class GoogleTests extends TestBase {
     }
 
     @Test
+    @AllureId("6035")
     @Description("Click 'Sign in' button")
     @DisplayName("Sign up should be clickable")
     void signInTest() {
@@ -70,6 +74,7 @@ public class GoogleTests extends TestBase {
     }
 
     @Test
+    @AllureId("6037")
     @Description("Check that search is working")
     @DisplayName("Selenide is searchable")
     void searchSelenideTest() {
@@ -89,6 +94,7 @@ public class GoogleTests extends TestBase {
     }
 
     @Test
+    @AllureId("6036")
     @Description("Check that you can read terms of service")
     @DisplayName("GitHub Terms of Service clickable")
     void termsOfServiceTest() {
