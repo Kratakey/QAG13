@@ -11,6 +11,7 @@ import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Configuration.baseUrl;
+import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 import static org.assertj.core.api.Assertions.assertThat;
@@ -18,21 +19,15 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class GoogleTests extends TestBase {
     @Test
-    @Description("Open google.com and verify the title")
+    @Description("Open github.com and verify the title")
     @DisplayName("Main page title should be correct")
     void titleMainPageCheckTest() {
         step("open " + baseUrl, () -> {
             open(baseUrl);
         });
 
-        step("accept cookies", () -> {
-            if ($("#gksS1d").isDisplayed()) {
-                $("#gksS1d").click();
-            }
-        });
-
-        step("check the title is 'Google'", () -> {
-            String expectedTitle = "Google";
+        step("check the title is 'GitHub: Where the world builds software · GitHub'", () -> {
+            String expectedTitle = "GitHub: Where the world builds software · GitHub";
             String actualTitle = title();
 
             assertThat(actualTitle).isEqualTo(expectedTitle);
@@ -47,12 +42,6 @@ public class GoogleTests extends TestBase {
             open(baseUrl);
         });
 
-        step("accept cookies", () -> {
-            if ($("#gksS1d").isDisplayed()) {
-                $("#gksS1d").click();
-            }
-        });
-
         step("Console logs should not contain text 'SEVERE'", () -> {
             String consoleLogs = DriverUtils.getConsoleLogs();
             String errorText = "SEVERE";
@@ -62,27 +51,20 @@ public class GoogleTests extends TestBase {
     }
 
     @Test
-    @Description("Search 'Selenium' and verify the title")
-    @DisplayName("Selenium should appear in search results")
-    void searchTest() {
-        String value = "Selenium";
+    @Description("Click 'Sign up' button")
+    @DisplayName("Sign up should be clickable")
+    void signUpTest() {
 
         step("open " + baseUrl, () -> {
             open(baseUrl);
         });
 
-        step("accept cookies", () -> {
-            if ($("#gksS1d").isDisplayed()) {
-                $("#gksS1d").click();
-            }
+        step("click 'Sign up'", () -> {
+            $(byText("Sign up")).click();
         });
 
-        step("search for '" + value + "'", () -> {
-            $("input[name='q']").setValue(value).pressEnter();
-        });
-
-        step("verify that search results contains '" + value + "'", () -> {
-            $("#search").shouldHave(text("https://www." + value + ".dev"));
+        step("verify that the register page is displayed", () -> {
+            $("div[id='email-container']").shouldBe(visible);
         });
     }
 
