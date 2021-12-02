@@ -12,6 +12,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selectors.byText;
+import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 import static org.assertj.core.api.Assertions.assertThat;
@@ -51,66 +52,60 @@ public class GoogleTests extends TestBase {
     }
 
     @Test
-    @Description("Click 'Sign up' button")
+    @Description("Click 'Sign in' button")
     @DisplayName("Sign up should be clickable")
-    void signUpTest() {
+    void signInTest() {
 
         step("open " + baseUrl, () -> {
             open(baseUrl);
         });
 
-        step("click 'Sign up'", () -> {
-            $(byText("Sign up")).click();
+        step("click 'Sign in'", () -> {
+            $("header").$(byText("Sign in")).click();
         });
 
         step("verify that the register page is displayed", () -> {
-            $("div[id='email-container']").shouldBe(visible);
+            $("div[id='login']").shouldBe(visible);
         });
     }
 
     @Test
-    @Description("Check that services could be opened")
-    @DisplayName("Service menu should be visible")
-    void openServicesMenu() {
+    @Description("Check that search is working")
+    @DisplayName("Selenide is searchable")
+    void searchSelenideTest() {
+        String value = "selenide";
+
         step("open " + baseUrl, () -> {
             open(baseUrl);
         });
 
-        step("accept cookies", () -> {
-            if ($("#gksS1d").isDisplayed()) {
-                $("#gksS1d").click();
-            }
+        step("search '" + value + "'", () -> {
+            $("input[name='q']").setValue(value).pressEnter();
         });
 
         step("Click on services", () -> {
-            $("#gbwa").click();
-        });
-
-            step("Services should be visible", () -> {
-            $("iframe").shouldBe(visible);
+            $("ul.repo-list li").shouldHave(text(value + "/" + value));
         });
     }
 
     @Test
-    @Description("Check that you can open settings list")
-    @DisplayName("Settings should be visible after the click")
-    void registrationOpenTest() {
+    @Description("Check that you can read terms of service")
+    @DisplayName("GitHub Terms of Service clickable")
+    void termsOfServiceTest() {
         step("open " + baseUrl, () -> {
             open(baseUrl);
         });
 
-        step("accept cookies", () -> {
-            if ($("#gksS1d").isDisplayed()) {
-                $("#gksS1d").click();
-            }
+        step("click 'Sign in'", () -> {
+            $("header").$(byText("Sign in")).click();
         });
 
-        step("Click on settings", () -> {
-            $("#Mses6b").click();
+        step("click 'Terms'", () -> {
+            $("div.footer").$("a").click();
         });
 
-        step("Settings should be visible", () -> {
-            $("#dEjpnf").shouldBe(visible);
+        step("verify that the terms page is displayed", () -> {
+            $("main").shouldHave(text("GitHub Terms of Service"));
         });
     }
 }
