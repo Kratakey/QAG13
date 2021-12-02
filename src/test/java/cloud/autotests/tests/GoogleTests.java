@@ -25,6 +25,12 @@ public class GoogleTests extends TestBase {
             open(baseUrl);
         });
 
+        step("accept cookies", () -> {
+            if ($("#gksS1d").isDisplayed()) {
+                $("#gksS1d").click();
+            }
+        });
+
         step("check the title is 'Google'", () -> {
             String expectedTitle = "Google";
             String actualTitle = title();
@@ -39,6 +45,12 @@ public class GoogleTests extends TestBase {
     void consoleShouldNotHaveErrorsTest() {
         step("open " + baseUrl, () -> {
             open(baseUrl);
+        });
+
+        step("accept cookies", () -> {
+            if ($("#gksS1d").isDisplayed()) {
+                $("#gksS1d").click();
+            }
         });
 
         step("Console logs should not contain text 'SEVERE'", () -> {
@@ -59,6 +71,12 @@ public class GoogleTests extends TestBase {
             open(baseUrl);
         });
 
+        step("accept cookies", () -> {
+            if ($("#gksS1d").isDisplayed()) {
+                $("#gksS1d").click();
+            }
+        });
+
         step("search for '" + value + "'", () -> {
             $("input[name='q']").setValue(value).pressEnter();
         });
@@ -76,6 +94,12 @@ public class GoogleTests extends TestBase {
             open(baseUrl);
         });
 
+        step("accept cookies", () -> {
+            if ($("#gksS1d").isDisplayed()) {
+                $("#gksS1d").click();
+            }
+        });
+
         step("Click on services", () -> {
             $("#gbwa").click();
         });
@@ -91,6 +115,12 @@ public class GoogleTests extends TestBase {
     void registrationOpenTest() {
         step("open " + baseUrl, () -> {
             open(baseUrl);
+        });
+
+        step("accept cookies", () -> {
+            if ($("#gksS1d").isDisplayed()) {
+                $("#gksS1d").click();
+            }
         });
 
         step("Click on settings", () -> {
