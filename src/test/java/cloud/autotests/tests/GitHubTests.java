@@ -19,7 +19,7 @@ import static io.qameta.allure.Allure.step;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @Feature("General tests")
-public class GoogleTests extends TestBase {
+public class GitHubTests extends TestBase {
     @Test
     @AllureId("6018")
     @Description("Open github.com and verify the title")
