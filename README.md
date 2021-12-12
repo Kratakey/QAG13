@@ -3,7 +3,7 @@
 
 <p  align="center"
 
-<code><img width="5%" title="IntelliJ IDEA" src="images/daramirra_IDEA-logo.svg"></code>
+<code><img width="5%" title="IntelliJ IDEA" src="https://upload.wikimedia.org/wikipedia/commons/9/9c/IntelliJ_IDEA_Icon.svg"></code>
 <code><img width="5%" title="Java" src="images/daramirra_java-logo.svg"></code>
 <code><img width="5%" title="Selenide" src="images/daramirra_selenide-logo.svg"></code>
 <code><img width="5%" title="REST-Assured" src="images/daramirra_rest-assured-logo.svg"></code>
