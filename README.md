@@ -1,3 +1,5 @@
+# Автоматизация тестирования
+
 
 ## :atom: Стек
 
@@ -51,7 +53,43 @@ Allure отчет:
 allure serve build/allure-results
 ```
 
-## <img width="4%" title="Selenoid" src="img/Selenoid.svg"> Пример запуска теста в Selenoid
+### Автотесты можно запустить из Jenkins
+
+<p align="center">
+  <img src="img/story/story_jenkins.png">
+</p>
+
+### О пройденных тестах приходит уведомление через Telegram бота
+
+<p align="center">
+  <img src="img/story/story_telegram.png">
+</p>
+
+### Allure отчет о пройденных тестах можно посмотреть из Jenkins или через бота
+
+<p align="center">
+  <img src="img/story/story_allure_report1.png">
+</p>
+
+### Каждый отдельный тест можно посмотреть по шагам, присутствуют логи/видео/снапшот
+
+<p align="center">
+  <img src="img/story/story_allure_report2.png">
+</p>
+
+### Генерируется отчет и для Allure TestOps
+
+<p align="center">
+  <img src="img/story/story_allure_testops1.png">
+</p>
+
+### Интеграция с Jira через Allure, динамическая задача
+
+<p align="center">
+  <img src="img/story/story_jira.png">
+</p>
+
+## <img width="4%" title="Selenoid" src="img/Selenoid.svg"> Как запускается тест в Selenoid
 
 <p align="center">
   <img src="img/QAG13 GIF.gif" alt="video" width="1000">
