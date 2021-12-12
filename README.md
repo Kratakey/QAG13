@@ -1,19 +1,22 @@
 
 ## :atom: Стек
 
-<img width="5%" title="IntelliJ IDEA" src="images/daramirra_IDEA-logo.svg">
-<img width="5%" title="Java" src="images/daramirra_java-logo.svg">
-<img width="5%" title="Selenide" src="images/daramirra_selenide-logo.svg">
-<img width="5%" title="REST-Assured" src="images/daramirra_rest-assured-logo.svg">
-<img width="5%" title="Selenoid" src="images/daramirra_selenoid-logo.svg">
-<img width="5%" title="Gradle" src="images/daramirra_gradle-logo.svg ">
-<img width="5%" title="JUnit5" src="images/daramirra_junit5-logo.svg">
-<img width="5%" title="Allure Report" src="images/daramirra_allure-Report-logo.svg">
-<img width="5%" title="Allure TestOps" src="images/daramirra_allure-ee-logo.svg">
-<img width="5%" title="Github" src="images/daramirra_git-logo.svg">
-<img width="5%" title="Jenkins" src="images/daramirra_jenkins-logo.svg">
-<img width="5%" title="Jira" src="images/daramirra_jira-logo.svg">
-<img width="5%" title="Telegram" src="images/daramirra_Telegram.svg"></code>
+<p  align="center"
+
+<code><img width="5%" title="IntelliJ IDEA" src="images/daramirra_IDEA-logo.svg"></code>
+<code><img width="5%" title="Java" src="images/daramirra_java-logo.svg"></code>
+<code><img width="5%" title="Selenide" src="images/daramirra_selenide-logo.svg"></code>
+<code><img width="5%" title="REST-Assured" src="images/daramirra_rest-assured-logo.svg"></code>
+<code><img width="5%" title="Selenoid" src="images/daramirra_selenoid-logo.svg"></code>
+<code><img width="5%" title="Gradle" src="images/daramirra_gradle-logo.svg "></code>
+<code><img width="5%" title="JUnit5" src="images/daramirra_junit5-logo.svg"></code>
+<code><img width="5%" title="Allure Report" src="images/daramirra_allure-Report-logo.svg"></code>
+<code><img width="5%" title="Allure TestOps" src="images/daramirra_allure-ee-logo.svg"></code>
+<code><img width="5%" title="Github" src="images/daramirra_git-logo.svg"></code>
+<code><img width="5%" title="Jenkins" src="images/daramirra_jenkins-logo.svg"></code>
+<code><img width="5%" title="Jira" src="images/daramirra_jira-logo.svg"></code>
+<code><img width="5%" title="Telegram" src="images/daramirra_Telegram.svg"></code>
+</p>
 
 ## :desktop_computer: Запуск тестов из командной строки
 
