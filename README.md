@@ -50,3 +50,9 @@ Allure отчет:
 ```bash
 allure serve build/allure-results
 ```
+
+## <img width="4%" title="Selenoid" src="img/Selenoid.svg"> Пример запуска теста в Selenoid
+
+<p align="center">
+  <img src="img/QAG13 GIF.gif" alt="video" width="1000">
+</p>
