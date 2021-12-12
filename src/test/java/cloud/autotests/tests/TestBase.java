@@ -3,6 +3,7 @@ package cloud.autotests.tests;
 import cloud.autotests.config.App;
 import cloud.autotests.config.Project;
 import cloud.autotests.helpers.AllureAttachments;
+import cloud.autotests.helpers.Attach;
 import cloud.autotests.helpers.DriverSettings;
 import cloud.autotests.helpers.DriverUtils;
 import com.codeborne.selenide.Configuration;
@@ -38,7 +39,7 @@ public class TestBase {
         Selenide.closeWebDriver();
 
         if (Project.isVideoOn()) {
-            AllureAttachments.addVideo(sessionId);
+            Attach.addVideo();
         }
     }
 }
