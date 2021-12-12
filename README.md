@@ -83,7 +83,7 @@ allure serve build/allure-results
   <img src="img/story/story_allure_testops1.png">
 </p>
 
-### Интеграция с Jira через Allure, динамическая задача
+### Интеграция с Jira через Allure TestOps
 
 <p align="center">
   <img src="img/story/story_jira.png">
