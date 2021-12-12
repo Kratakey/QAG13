@@ -1,7 +1,7 @@
 
 ## :atom: Стек
 
-<p  align="center"
+<p  align="center">
 
 <img width="5%" title="IntelliJ IDEA" src="img/Intelij_IDEA.svg">
 <img width="5%" title="Java" src="img/Java.svg">
