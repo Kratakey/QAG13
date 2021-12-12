@@ -2,7 +2,7 @@
 ## :atom: Стек
 
 
-
+<p>
 <img width="5%" title="IntelliJ IDEA" src="img/Intelij_IDEA.svg">
 <img width="5%" title="Java" src="img/Java.svg">
 <img width="5%" title="Selenide" src="img/Selenide.svg">
@@ -16,7 +16,7 @@
 <img width="5%" title="Allure TestOps" src="img/Allure_EE.svg">
 <img width="5%" title="Jira" src="img/Jira.svg">
 <img width="5%" title="Telegram" src="img/Telegram.svg">
-
+</p>
 
 ## :desktop_computer: Запуск тестов из командной строки
 
