@@ -4,7 +4,7 @@
 <p  align="center"
 
 <code><img width="5%" title="IntelliJ IDEA" src="https://upload.wikimedia.org/wikipedia/commons/9/9c/IntelliJ_IDEA_Icon.svg"></code>
-<code><img width="5%" title="Java" src="https://upload.wikimedia.org/wikipedia/ru/thumb/3/39/Java_logo.svg/1200px-Java_logo.svg.png"></code>
+<code><img width="5%" title="Java" src="https://upload.wikimedia.org/wikipedia/ru/3/39/Java_logo.svg"></code>
 <code><img width="5%" title="Selenide" src="images/daramirra_selenide-logo.svg"></code>
 <code><img width="5%" title="REST-Assured" src="images/daramirra_rest-assured-logo.svg"></code>
 <code><img width="5%" title="Selenoid" src="images/daramirra_selenoid-logo.svg"></code>
